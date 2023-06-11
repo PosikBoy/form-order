@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма заказа</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="container">
+          <div class="form">
+            <p class="contact-form__message"></p>
+            <div class="preloader"></div>
+            <form action="js/form.php" class="form-order" method="POST">
+              <h1 class="title">Форма заказа</h1>
+              <div class="form__first-place">
+                <div class="form-item form__first-adress">
+                  <input
+                    type="text"
+                    name="first__adress"
+                    id="first__adress"
+                    placeholder="Введите адрес забора"
+                  />
+                </div>
+                <div class="form__row">
+                  <div class="form-item__row form__entrance">
+                    <input
+                      type="text"
+                      name="first__entrance"
+                      id="first__entrance"
+                      placeholder="Подъезд"
+                    />
+                  </div>
+                  <div class="form-item__row form__floor">
+                    <input
+                      type="text"
+                      name="first__floor"
+                      id="first__floor"
+                      placeholder="Этаж"
+                    />
+                  </div>
+                  <div class="form-item__row form__flat">
+                    <input
+                      type="text"
+                      name="first__flat"
+                      id="first__flat"
+                      placeholder="Квартира"
+                    />
+                  </div>
+                </div>
+                <div class="form__phone">
+                  <input
+                    name="first__phone"
+                    type="tel"
+                    class="form-item form__phone"
+                    placeholder="Введите телефон"
+                  />
+                </div>
+              </div>
+              <div class="form__second-place">
+                <div class="form-item form__first-adress">
+                  <input
+                    type="text"
+                    name="second__adress"
+                    id="second__adress"
+                    placeholder="Введите адрес прибытия"
+                  />
+                </div>
+                <div class="form__row">
+                  <div class="form-item__row form__entrance">
+                    <input
+                      type="text"
+                      name="second__entrance"
+                      id="second__entrance"
+                      placeholder="Подъезд"
+                    />
+                  </div>
+                  <div class="form-item__row form__floor">
+                    <input
+                      type="text"
+                      name="second__floor"
+                      id="second__floor"
+                      placeholder="Этаж"
+                    />
+                  </div>
+                  <div class="form-item__row form__flat">
+                    <input
+                      type="text"
+                      name="second__flat"
+                      id="second__flat"
+                      placeholder="Квартира"
+                    />
+                  </div>
+                </div>
+                <div class="form__phone">
+                  <input
+                    name="second__phone"
+                    type="tel"
+                    class="form-item form__phone"
+                    placeholder="Введите телефон"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="form__button">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
